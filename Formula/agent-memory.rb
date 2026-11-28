@@ -10,6 +10,12 @@ class AgentMemory < Formula
   sha256 "7981b489058107166d3c416d23615671d6214a1584f42c239292d2406bb7c0d3"
   license "PolyForm-Noncommercial-1.0.0"
 
+  bottle do
+    root_url "https://github.com/roune/homebrew-tap/releases/download/agent-memory-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "ab7647c96fb46a06dbd87f4335f12c154e1edb4ba1701b8360fcee08a7fc4d52"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c222c5627aa5334a4bdcd9258063dbd14157278901fd9f6523605fc5c282f745"
+  end
+
   depends_on "python@3.15"
 
   def install
